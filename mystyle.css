@@ -1,0 +1,159 @@
+* {
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    margin-right: 0.01rem;
+    margin-left: 0.01rem;
+    padding: 0.01em;
+    box-sizing: border-box;
+}
+
+.jersey-10-regular {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(229, 232, 232);
+    font-family: 'Jersey 10', sans-serif;
+}
+
+header,
+nav,
+main,
+footer {
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 1px;
+    border-radius: 10px;
+
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-right: 0.01rem;
+    padding-left: 0.01rem;
+    text-align: center;
+    border-radius: 0.4cm;
+    font-family: 'Arial', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.1in;
+}
+
+@media (max-width: 768px) {
+    main {
+        display: block;
+        gap: 0;
+    }
+}
+
+section {
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 0.2cm;
+    --main-color: #bad0e2;
+    border: 1px solid var(--main-color);
+    display: inline;
+}
+
+h1,
+h2,
+h3 {
+    color: #110303;
+}
+
+h1 {
+    font-family: 'Jersey 10', sans-serif;
+    font-size: 2cm;
+}
+
+p {
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+#video,
+#Things_to_do,
+#Update,
+#attendance,
+#Comment {
+    text-align: left;
+    display: block;
+    background-color: #c3d0da;
+    margin: 10px 15px 10px 15px;
+    position: relative;
+}
+
+.logo {
+    width: 20vw;
+    height: 7vw;
+    max-width: 20vw;
+    min-width: 7vw;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type="checkbox"] {
+    margin: 5px;
+    position: static;
+}
+
+a[href^="https"] {
+    color: #6e287c;
+}
+
+a:hover {
+    color: hsl(271, 75%, 69%);
+    text-decoration: none;
+}
+
+a:active {
+    color: hsl(76, 68%, 73%);
+    text-decoration: none;
+}
+
+input:checked {
+    outline: 2px solid green;
+}
+
+
+nav ul li {
+    list-style-type: none;
+}
+
+ul>li {
+    padding: 0;
+}
+
+h1~p {
+    color: #7f8c8d;
+}
+
+h2+p {
+    font-weight: bold;
+}
+
+section.updates input[type="text"] {
+    border: solid color(srgb 0.7412 0.7647 0.7804);
+}
+
+nav li:has(> a.active) {
+    background-color: #e99a1a;
+}
+
+nav {
+    ul {
+        li {
+            color: #34495e;
+        }
+    }
+}
+
+.comments form {
+    background-color: color-mix(in srgb, white 80%, #add8e6 20%);
+}

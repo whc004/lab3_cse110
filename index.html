@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <title>Meeting by Vincent</title>
+    <style>
+        video {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="main-header">
+        <img src="icon.jpg" alt="pic" class="logo">
+        <h1 class="title"><b>Infinite loop</b></h1>
+        <h2><a href="https://en.wikipedia.org/wiki/Infinite_loop" class="link">Infinite loop meaning</a></h2>
+        <h3><strong>Making Date: April 16th, 2024</strong></h3>
+
+    </header>
+    <nav>
+        <ul>
+            <li class="nav-item"><a href="#video">Video and audio</a></li>
+            <li class="nav-item"><a href="#Things_to_do">Things to do</a></li>
+            <li class="nav-item"><a href="#Update">Update</a></li>
+            <li class="nav-item"><a href="#attendance">Attendance</a></li>
+            <li class="nav-item"><a href="#Comment">Comment</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <main>
+        <section id='video' data-type="media">
+            <h2>Video and Audio</h2>
+            <article>
+                <h3>Previous Audio Recording</h3>
+                <audio controls>
+                    <source src="audio.m4a" type="audio/mpeg">
+                </audio>
+            </article>
+            <article>
+                <h3>Previous Video Recording</h3>
+                <video width="100" height="400" autoplay loop muted>
+                    <source src="video.mp4" type="video/mp4">
+                    <source src="video.ogg" type="video/ogg">
+                </video>
+            </article>
+        </section>
+        <section id='Things_to_do' class="tasks">
+            <h2>Things to do</h2>
+            <ol>
+                <li class="task-item"><span>Introduction</span></li>
+                <li class="task-item">Ice breaker</li>
+            </ol>
+        </section>
+        <section id='Update' class="updates">
+            <h2>Update</h2>
+            <form>
+                <div>
+                    <label for="Updates">Update:</label>
+                    <input type="text" id="Updates" name="Update stuff" placeholder="Update stuff">
+                </div>
+            </form>
+        </section>
+        <section id='attendance' class="attendance">
+            <h2>Meeting attendance</h2>
+            <ul>
+                <li><input type="checkbox" name="attendee"><strong>Vincent</strong></li>
+                <li><input type="checkbox" name="attendee"><i>Lindsey</i></li>
+                <li><input type="checkbox" name="attendee"><em>Ritviksiddha</em></li>
+                <li><input type="checkbox" name="attendee"><b>Eban</b></li>
+                <li><input type="checkbox" name="attendee"><i>Guan</i></li>
+                <li><input type="checkbox" name="attendee"><em>Ibraheem</em></li>
+                <li><input type="checkbox" name="attendee"><i>Sidhant</i></li>
+                <li><input type="checkbox" name="attendee"><em>Jordan</em></li>
+                <li><input type="checkbox" name="attendee"><i>Matthew</i></li>
+                <li><input type="checkbox" name="attendee"><em>Sophia</em></li>
+            </ul>
+        </section>
+        <section id='Comment' class="comments">
+            <h2> Comment:</h2>
+            <details>
+                <summary>Previous comment</summary>
+                <p>XXXXXXXXXXXXXX</p>
+            </details>
+            <form>
+                <fieldset>
+                    <div>
+                        <label for="name">Choose your name:</label>
+                        <select id="name" name="name">
+                            <option value="Vincent">Vincent</option>
+                            <option value="Lindsey">Lindsey</option>
+                            <option value="Ritviksiddha">Ritviksiddha</option>
+                            <option value="Eban">Eban</option>
+                            <option value="Guan">Guan</option>
+                            <option value="Ibraheem">Ibraheem</option>
+                            <option value="Sidhant">Sidhant</option>
+                            <option value="Jordan">Jordan</option>
+                            <option value="Matthew">Matthew</option>
+                            <option value="Sophia">Sophia</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="purpose">Purpose:</label>
+                        <input list="purposes" id="purpose" name="purpose">
+                        <datalist id="purposes">
+                            <option value="update">
+                            <option value="failed for sth">
+                            <option value="other">
+                        </datalist>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="Title">Enter title:</label>
+                        <input type="text" id="Title" name="title" placeholder="title">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="Content">Content:</label>
+                        <textarea id="Content" name="Content" rows="4" cols="20"></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="meeting">Request for meeting</label>
+                        <input type="checkbox" name="check" id="meeting">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="date">Date:</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>By Wen Hsin Chang.</p>
+    </footer>
+</body>
+
+</html>
