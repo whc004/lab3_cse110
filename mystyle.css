@@ -138,20 +138,24 @@ h2+p {
     font-weight: bold;
 }
 
+
+/*nest selector*/
+nav {
+    ul {
+        li {
+            background-color: #e0d7c8;
+        }
+    }
+}
+
 section.updates input[type="text"] {
-    border: solid color(srgb 0.7412 0.7647 0.7804);
+    background-color: color(srgb 0.8824 0.9255 0.9451);
+    border: 1px solid #3498db;
+    padding: 8px;
 }
 
 nav li:has(> a.active) {
     background-color: #e99a1a;
-}
-
-nav {
-    ul {
-        li {
-            color: #34495e;
-        }
-    }
 }
 
 .comments form {
